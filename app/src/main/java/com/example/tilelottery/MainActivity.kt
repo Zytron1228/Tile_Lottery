@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun changeScore() { //the
+    private fun changeScore() {//the
 
         val lotNum = (1..10).random()
         when(lotNum){
