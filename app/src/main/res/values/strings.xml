@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tile Lottery</string>
+    <string name="score">Coins: %s</string>
+
+</resources>
