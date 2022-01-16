@@ -99,13 +99,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun changeScore() {//the
+    private fun changeScore() { //the
 
-//        when ((1..10).random()) {
-//            1 or 2 or 3 or 4 or 5-> win()
-//            6 ->  Toast.makeText(this, "neither", Toast.LENGTH_SHORT).show()
-//            7 or 8 or 9 or 10 -> loss()
-//        }
         val lotNum = (1..10).random()
         when(lotNum){
             in 2..5, 10 -> win()
