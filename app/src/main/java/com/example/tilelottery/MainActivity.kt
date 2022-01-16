@@ -56,46 +56,46 @@ class MainActivity : AppCompatActivity() {
             changeScore()
         }
         tile2.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 2 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile3.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 3 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile4.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 4 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile5.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 5 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile6.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 6 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile7.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 7 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile8.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 8 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile9.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 9 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile10.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 10 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile11.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 11 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile12.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 12 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile13.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 13 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile14.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 14 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
         tile15.setOnClickListener { view ->
-            Toast.makeText(this, "Tile 15 works.", Toast.LENGTH_LONG).show()
+            changeScore()
         }
     }
 
@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
         val lotNum = (1..10).random()
         when(lotNum){
             in 2..5, 10 -> win()
-            1 -> Toast.makeText(this, "neither", Toast.LENGTH_SHORT).show()
+            1 -> nothing()
             in 6..9 -> loss()
         }
         balance.text = getString(R.string.score, coins.toString())
@@ -112,14 +112,18 @@ class MainActivity : AppCompatActivity() {
 //        balance.startAnimation(blinkAnimation)
     }
 
+    private fun nothing() {
+        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
+    }
+
     private fun loss() {
         coins --
-        Toast.makeText(this, "loss", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "you lost 1 coin", Toast.LENGTH_SHORT).show()
     }
 
     private fun win() {
         coins ++
-        Toast.makeText(this, "win", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "you won 1 coin", Toast.LENGTH_SHORT).show()
     }
 
 }
