@@ -5,31 +5,43 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
-    internal lateinit var tile1: Button
-    internal lateinit var tile2: Button
-    internal lateinit var tile3: Button
-    internal lateinit var tile4: Button
-    internal lateinit var tile5: Button
-    internal lateinit var tile6: Button
-    internal lateinit var tile7: Button
-    internal lateinit var tile8: Button
-    internal lateinit var tile9: Button
-    internal lateinit var tile10: Button
-    internal lateinit var tile11: Button
-    internal lateinit var tile12: Button
-    internal lateinit var tile13: Button
-    internal lateinit var tile14: Button
-    internal lateinit var tile15: Button
+    private lateinit var tile1: Button
+    private lateinit var tile2: Button
+    private lateinit var tile3: Button
+    private lateinit var tile4: Button
+    private lateinit var tile5: Button
+    private lateinit var tile6: Button
+    private lateinit var tile7: Button
+    private lateinit var tile8: Button
+    private lateinit var tile9: Button
+    private lateinit var tile10: Button
+    private lateinit var tile11: Button
+    private lateinit var tile12: Button
+    private lateinit var tile13: Button
+    private lateinit var tile14: Button
+    private lateinit var tile15: Button
     private lateinit var balance: TextView
 
     private var coins = 0
-
-    companion object {
-        private val SCORE_KEY = "SCORE_KEY"
-    }
+    private var lot1 = Random.nextBoolean()
+    private var lot2 = Random.nextBoolean()
+    private var lot3 = Random.nextBoolean()
+    private var lot4 = Random.nextBoolean()
+    private var lot5 = Random.nextBoolean()
+    private var lot6 = Random.nextBoolean()
+    private var lot7 = Random.nextBoolean()
+    private var lot8 = Random.nextBoolean()
+    private var lot9 = Random.nextBoolean()
+    private var lot10 = Random.nextBoolean()
+    private var lot11 = Random.nextBoolean()
+    private var lot12 = Random.nextBoolean()
+    private var lot13 = Random.nextBoolean()
+    private var lot14 = Random.nextBoolean()
+    private var lot15 = Random.nextBoolean()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,59 +65,63 @@ class MainActivity : AppCompatActivity() {
         balance = findViewById(R.id.balanceCounter)
 
         tile1.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile2.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile3.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile4.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile5.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile6.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile7.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile8.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile9.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile10.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile11.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile12.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile13.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile14.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
         tile15.setOnClickListener { view ->
-            changeScore()
+            checkLot()
         }
     }
 
-    private fun changeScore() {//the
+    private fun checkLot() {
+        if (
+            lot1
+        ) win()
+        else if (
+            !lot1
+        ) loss()
+        //also make this tile disabled until round restarts.
+    }
 
-        when((1..10).random()){
-            in 2..5, 10 -> win()
-            1 -> nothing()
-            in 6..9 -> loss()
-        }
+    private fun updateScore() {//the
         balance.text = getString(R.string.score, coins.toString())
 //        val blinkAnimation = AnimationUtils.loadAnimation(this, R.anim.blink)
 //        balance.startAnimation(blinkAnimation)
@@ -113,16 +129,23 @@ class MainActivity : AppCompatActivity() {
 
     private fun nothing() {
         Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
+        updateScore()// and make tile black
     }
 
     private fun loss() {
         coins --
         Toast.makeText(this, "you lost 1 coin", Toast.LENGTH_SHORT).show()
+        updateScore()// and make tile red
     }
 
     private fun win() {
         coins ++
         Toast.makeText(this, "you won 1 coin", Toast.LENGTH_SHORT).show()
+        updateScore()// and make tile green
+    }
+
+    private fun shuffleTiles() {
+        TODO("Not yet implemented")//randomize the tiles' value as to weather ots a win, loss, or neither, and reset all tile colors back to navy blue
     }
 
 }
