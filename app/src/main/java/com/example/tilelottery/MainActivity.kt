@@ -101,8 +101,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeScore() {//the
 
-        val lotNum = (1..10).random()
-        when(lotNum){
+        when((1..10).random()){
             in 2..5, 10 -> win()
             1 -> nothing()
             in 6..9 -> loss()
