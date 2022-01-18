@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue_1">#04A9EA</color>
     <color name="blue_2">#1569A1</color>
+    <color name="lotWin">#23F350</color>
+    <color name="lotLoss">#E6223F</color>
+    <color name="lotNeither">#191422</color>
+    <color name="lotDefault">#F02BAAFF</color>
+    <color name="currentTint">#191422</color>
 </resources>
