@@ -122,78 +122,79 @@ class MainActivity : AppCompatActivity() {
     private fun checkLot1() {
         if (lot1) win()
         else if (!lot1) loss()
-        //also make this tile disabled until round restarts.
         tile1.isClickable = false
-//        tile1.foregr
+//        tile1.foreg
 
     }
     private fun checkLot2() {
         if (lot2) win()
         else if (!lot2) loss()
         tile2.isClickable = false
-        //also make this tile disabled until round restarts.
     }
     private fun checkLot3() {
         if (lot3) win()
         else if (!lot3) loss()
         tile3.isClickable = false
-        //also make this tile disabled until round restarts.
     }
     private fun checkLot4() {
         if (lot4) win()
         else if (!lot4) loss()
         tile4.isClickable = false
-        //also make this tile disabled until round restarts.
     }
     private fun checkLot5() {
         if (lot5) win()
         else if (!lot5) loss()
         tile5.isClickable = false
-        //also make this tile disabled until round restarts.
     }
     private fun checkLot6() {
         if (lot6) win()
         else if (!lot6) loss()
-        //also make this tile disabled until round restarts.
+        tile6.isClickable = false
     }
     private fun checkLot7() {
         if (lot7) win()
         else if (!lot7) loss()
-        //also make this tile disabled until round restarts.
+        tile7.isClickable = false
     }
     private fun checkLot8() {
         if (lot8) win()
         else if (!lot8) loss()
-        //also make this tile disabled until round restarts.
+        tile8.isClickable = false
     }
     private fun checkLot9() {
         if (lot9) win()
         else if (!lot9) loss()
-        //also make this tile disabled until round restarts.
+        tile9.isClickable = false
     }
     private fun checkLot10() {
         if (lot10) win()
         else if (!lot10) loss()
+        tile10.isClickable = false
     }
     private fun checkLot11() {
         if (lot11) win()
         else if (!lot11) loss()
+        tile11.isClickable = false
     }
     private fun checkLot12() {
         if (lot12) win()
         else if (!lot12) loss()
+        tile12.isClickable = false
       }
     private fun checkLot13() {
         if (lot13) win()
         else if (!lot13) loss()
+        tile13.isClickable = false
     }
     private fun checkLot14() {
         if (lot14) win()
         else if (!lot14) loss()
+        tile14.isClickable = false
     }
     private fun checkLot15() {
         if (lot15) win()
         else if (!lot15) loss()
+        tile15.isClickable = false
     }
 
     private fun updateScore() { //the
@@ -214,9 +215,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun winMagnitude() {
         when((1..15).random()){
-            in 1..6 -> win5() //    40.0 %
-            7,11 -> win25()  //     33.33 %
-            12,13,14 -> win100() // 20.0 %
+            in 1..8 -> win5() //    53.33 %
+            9,12 -> win25()  //     26.66 %
+            13,14 -> win100() //    13.33 %
             15 -> win500()    //    06.66 %
         }
     }
