@@ -142,132 +142,89 @@ class MainActivity : AppCompatActivity() {
     private fun checkLot4() {
         if (lot4) win()
         else if (!lot4) loss()
+        tile4.isClickable = false
         //also make this tile disabled until round restarts.
     }
     private fun checkLot5() {
-        if (
-            lot5
-        ) win()
-        else if (
-            !lot5
-        ) loss()
+        if (lot5) win()
+        else if (!lot5) loss()
+        tile5.isClickable = false
         //also make this tile disabled until round restarts.
     }
     private fun checkLot6() {
-        if (
-            lot6
-        ) win()
-        else if (
-            !lot6
-        ) loss()
+        if (lot6) win()
+        else if (!lot6) loss()
         //also make this tile disabled until round restarts.
     }
     private fun checkLot7() {
-        if (
-            lot7
-        ) win()
-        else if (
-            !lot7
-        ) loss()
+        if (lot7) win()
+        else if (!lot7) loss()
         //also make this tile disabled until round restarts.
     }
     private fun checkLot8() {
-        if (
-            lot8
-        ) win()
-        else if (
-            !lot8
-        ) loss()
+        if (lot8) win()
+        else if (!lot8) loss()
         //also make this tile disabled until round restarts.
     }
     private fun checkLot9() {
-        if (
-            lot9
-        ) win()
-        else if (
-            !lot9
-        ) loss()
+        if (lot9) win()
+        else if (!lot9) loss()
         //also make this tile disabled until round restarts.
     }
     private fun checkLot10() {
-        if (
-            lot10
-        ) win()
-        else if (
-            !lot10
-        ) loss()
-        //also make this tile disabled until round restarts.
+        if (lot10) win()
+        else if (!lot10) loss()
     }
     private fun checkLot11() {
-        if (
-            lot11
-        ) win()
-        else if (
-            !lot11
-        ) loss()
-        //also make this tile disabled until round restarts.
+        if (lot11) win()
+        else if (!lot11) loss()
     }
     private fun checkLot12() {
-        if (
-            lot12
-        ) win()
-        else if (
-            !lot12
-        ) loss()
-        //also make this tile disabled until round restarts.
-    }
+        if (lot12) win()
+        else if (!lot12) loss()
+      }
     private fun checkLot13() {
-        if (
-            lot13
-        ) win()
-        else if (
-            !lot13
-        ) loss()
-        //also make this tile disabled until round restarts.
+        if (lot13) win()
+        else if (!lot13) loss()
     }
     private fun checkLot14() {
-        if (
-            lot14
-        ) win()
-        else if (
-            !lot14
-        ) loss()
-        //also make this tile disabled until round restarts.
+        if (lot14) win()
+        else if (!lot14) loss()
     }
     private fun checkLot15() {
-        if (
-            lot15
-        ) win()
-        else if (
-            !lot15
-        ) loss()
-        //also make this tile disabled until round restarts.
+        if (lot15) win()
+        else if (!lot15) loss()
     }
 
-    private fun updateScore() {//the
+    private fun updateScore() { //the
         balance.text = getString(R.string.score, coins.toString())
 //        val blinkAnimation = AnimationUtils.loadAnimation(this, R.anim.blink)
 //        balance.startAnimation(blinkAnimation)
     }
 
-    private fun nothing() {
-        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
-        updateScore()// and make tile black
-    }
+//    private fun nothing() {
+//        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
+//        updateScore()// and make tile black
+//    } // chance of rickroll
 
     private fun loss() {
-        lossMagnitude()
+//        lossMagnitude()
         coins -= 5
         Toast.makeText(this, "you lost 5 coins", Toast.LENGTH_SHORT).show()
         updateScore()// and make tile red
     }
 
     private fun lossMagnitude() {
-        TODO("Not yet implemented")
+        when((1..10)) {
+            1..5 -> coins += 5
+            6..8 -> coins += 25
+            9 -> coins += 100
+            10 -> coins += 500
+        }
     }
 
     private fun win() {
-        winMagnitude()
+//        winMagnitude()
         coins += 5
         Toast.makeText(this, "you won 5 coins", Toast.LENGTH_SHORT).show()
         updateScore()// and make tile green
@@ -293,6 +250,21 @@ class MainActivity : AppCompatActivity() {
         lot13 = Random.nextBoolean()
         lot14 = Random.nextBoolean()
         lot15 = Random.nextBoolean()
+        tile1.isClickable = true
+        tile2.isClickable = true
+        tile3.isClickable = true
+        tile4.isClickable = true
+        tile5.isClickable = true
+        tile6.isClickable = true
+        tile7.isClickable = true
+        tile8.isClickable = true
+        tile9.isClickable = true
+        tile10.isClickable = true
+        tile11.isClickable = true
+        tile12.isClickable = true
+        tile13.isClickable = true
+        tile14.isClickable = true
+        tile15.isClickable = true
         Toast.makeText(this, "Tiles reshuffled.", Toast.LENGTH_SHORT).show()
 //        lot1Color =
         //randomize the tiles' value as to weather ots a win, loss, or neither, and reset all tile colors back to navy blue
