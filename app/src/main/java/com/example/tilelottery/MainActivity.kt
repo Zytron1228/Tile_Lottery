@@ -202,10 +202,10 @@ class MainActivity : AppCompatActivity() {
 //        balance.startAnimation(blinkAnimation)
     }
 
-//    private fun nothing() {
-//        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
-//        updateScore()// and make tile black
-//    } // chance of rickroll
+    private fun nothing() {
+        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
+        updateScore()// and make tile black
+    } // chance of rickroll
 
     private fun loss() {
         lossMagnitude()
