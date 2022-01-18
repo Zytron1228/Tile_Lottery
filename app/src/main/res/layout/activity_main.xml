@@ -101,6 +101,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.125" />
 
+
+
     ]]>
 
     <Button
@@ -111,8 +113,12 @@
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotDefault"
         android:foregroundTintMode="multiply"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="78dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
 
     <Button
         android:id="@+id/tile6"
