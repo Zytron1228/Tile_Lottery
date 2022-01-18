@@ -202,36 +202,41 @@ class MainActivity : AppCompatActivity() {
 //        balance.startAnimation(blinkAnimation)
     }
 
-//    private fun nothing() {
-//        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
-//        updateScore()// and make tile black
-//    } // chance of rickroll
+    private fun nothing() {
+        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
+        updateScore()// and make tile black
+    } // chance of rickroll
 
     private fun loss() {
-//        lossMagnitude()
+        lossMagnitude()
         coins -= 5
         Toast.makeText(this, "you lost 5 coins", Toast.LENGTH_SHORT).show()
         updateScore()// and make tile red
     }
 
     private fun lossMagnitude() {
-        when((1..10)) {
-            1..5 -> coins += 5
-            6..8 -> coins += 25
+        when((1..10).random()){
+            in 1..5 -> coins += 5
+            in 6..8 -> coins += 25
             9 -> coins += 100
             10 -> coins += 500
         }
     }
 
     private fun win() {
-//        winMagnitude()
+        winMagnitude()
         coins += 5
         Toast.makeText(this, "you won 5 coins", Toast.LENGTH_SHORT).show()
         updateScore()// and make tile green
     }
 
     private fun winMagnitude() {
-        TODO("Not yet implemented")
+        when((1..10).random()){
+            in 1..5 -> coins -= 5
+            in 6..8 -> coins -= 25
+            9 -> coins -= 100
+            10 -> coins -= 500
+        }
     }
 
     private fun shuffleTiles() {
