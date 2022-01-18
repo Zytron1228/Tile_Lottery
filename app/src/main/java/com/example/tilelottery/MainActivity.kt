@@ -124,30 +124,24 @@ class MainActivity : AppCompatActivity() {
         else if (!lot1) loss()
         //also make this tile disabled until round restarts.
         tile1.isClickable = false
-        tile1.foregr
+//        tile1.foregr
 
     }
     private fun checkLot2() {
         if (lot2) win()
         else if (!lot2) loss()
+        tile2.isClickable = false
         //also make this tile disabled until round restarts.
     }
     private fun checkLot3() {
-        if (
-            lot3
-        ) win()
-        else if (
-            !lot3
-        ) loss()
+        if (lot3) win()
+        else if (!lot3) loss()
+        tile3.isClickable = false
         //also make this tile disabled until round restarts.
     }
     private fun checkLot4() {
-        if (
-            lot4
-        ) win()
-        else if (
-            !lot4
-        ) loss()
+        if (lot4) win()
+        else if (!lot4) loss()
         //also make this tile disabled until round restarts.
     }
     private fun checkLot5() {
