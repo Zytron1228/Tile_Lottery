@@ -202,41 +202,71 @@ class MainActivity : AppCompatActivity() {
 //        balance.startAnimation(blinkAnimation)
     }
 
-    private fun nothing() {
-        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
-        updateScore()// and make tile black
-    } // chance of rickroll
+//    private fun nothing() {
+//        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
+//        updateScore()// and make tile black
+//    } // chance of rickroll
 
     private fun loss() {
         lossMagnitude()
-        coins -= 5
-        Toast.makeText(this, "you lost 5 coins", Toast.LENGTH_SHORT).show()
         updateScore()// and make tile red
     }
 
-    private fun lossMagnitude() {
-        when((1..10).random()){
-            in 1..5 -> coins += 5
-            in 6..8 -> coins += 25
-            9 -> coins += 100
-            10 -> coins += 500
+    private fun winMagnitude() {
+        when((1..15).random()){
+            in 1..6 -> win5() //    40.0 %
+            7,11 -> win25()  //     33.33 %
+            12,13,14 -> win100() // 20.0 %
+            15 -> win500()    //    06.66 %
         }
+    }
+
+    private fun win500() {
+        coins += 500
+        Toast.makeText(this, "JACKPOT! You won 500 coins", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun win100() {
+        coins += 100
+        Toast.makeText(this, "you won 100 coins", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun win25() {
+        coins += 25
+        Toast.makeText(this, "you won 25 coins", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun win5() {
+        coins += 5
+        Toast.makeText(this, "you won 5 coins", Toast.LENGTH_SHORT).show()
     }
 
     private fun win() {
         winMagnitude()
-        coins += 5
-        Toast.makeText(this, "you won 5 coins", Toast.LENGTH_SHORT).show()
         updateScore()// and make tile green
     }
 
-    private fun winMagnitude() {
-        when((1..10).random()){
-            in 1..5 -> coins -= 5
-            in 6..8 -> coins -= 25
-            9 -> coins -= 100
-            10 -> coins -= 500
+    private fun lossMagnitude() {
+        when((1..20).random()){
+            in 1..9 -> lose5() //  45%
+            in 10..18 -> lose25() // 40%
+            19,20 -> lose100() //   10%
         }
+    }
+
+    private fun lose100() {
+        coins -= 100
+        Toast.makeText(this, "you lost 100 coins!", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun lose25() {
+        coins -= 25
+        Toast.makeText(this, "you lost 25 coins", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun lose5() {
+        coins -= 5
+        Toast.makeText(this, "you lost 5 coins", Toast.LENGTH_SHORT).show();
     }
 
     private fun shuffleTiles() {
