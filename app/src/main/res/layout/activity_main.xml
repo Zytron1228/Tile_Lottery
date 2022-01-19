@@ -7,9 +7,515 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/tile11"
+        android:id="@+id/winTile1"
         android:layout_width="105dp"
         android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/winTile2"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/winTile3"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <Button
+        android:id="@+id/winTile4"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/winTile5"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/winTile6"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/winTile7"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/winTile8"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/winTile9"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/winTile10"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/winTile11"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/winTile12"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/winTile13"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <Button
+        android:id="@+id/winTile14"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <Button
+        android:id="@+id/winTile15"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotWin"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/lossTile1"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/lossTile2"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/lossTile3"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <Button
+        android:id="@+id/lossTile4"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/lossTile5"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/lossTile6"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/lossTile7"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lossTile8"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lossTile9"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lossTile10"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/lossTile11"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/lossTile12"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/lossTile13"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <Button
+        android:id="@+id/lossTile14"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <Button
+        android:id="@+id/lossTile15"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotLoss"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/unopenedTile1"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/unopenedTile2"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/unopenedTile3"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotDefault"
@@ -19,12 +525,190 @@
         app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
+        app:layout_constraintVertical_bias="0.124" />
 
     <Button
-        android:id="@+id/tile10"
+        android:id="@+id/unopenedTile4"
         android:layout_width="105dp"
         android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/unopenedTile5"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/unopenedTile6"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/unopenedTile7"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/unopenedTile8"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/unopenedTile9"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/unopenedTile10"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/unopenedTile11"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" /><![CDATA[
+
+
+
+
+
+
+
+    @color/lotDefault
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/unopenedTile12"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/unopenedTile13"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotDefault"
@@ -37,15 +721,32 @@
         app:layout_constraintVertical_bias="0.868" />
 
     <Button
-        android:id="@+id/tile12"
+        android:id="@+id/unopenedTile14"
         android:layout_width="105dp"
         android:layout_height="105dp"
+        android:alpha="1"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotDefault"
         android:foregroundTintMode="multiply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <Button
+        android:id="@+id/unopenedTile15"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:foreground="@android:drawable/progress_horizontal"
+        android:foregroundTint="@color/lotDefault"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.868" />
@@ -63,198 +764,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <Button
-        android:id="@+id/tile1"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
-
-    <Button
-        android:id="@+id/tile3"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" /><![CDATA[
-
-    @color/lotDefault
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
-
-
-
-    ]]>
-
-    <Button
-        android:id="@+id/tile2"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.124" />
-
-    <Button
-        android:id="@+id/tile6"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
-
-    <Button
-        android:id="@+id/tile5"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.874"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
-
-    <Button
-        android:id="@+id/tile4"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
-
-    <Button
-        android:id="@+id/tile7"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/tile9"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/tile8"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/tile13"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
-
-    <Button
-        android:id="@+id/tile14"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
-
-    <Button
-        android:id="@+id/tile15"
-        android:layout_width="105dp"
-        android:layout_height="105dp"
-        android:background="#00000000"
-        android:foreground="@android:drawable/progress_horizontal"
-        android:foregroundTint="@color/lotDefault"
-        android:foregroundTintMode="multiply"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
-
     <TextView
         android:id="@+id/balanceCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/score"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"

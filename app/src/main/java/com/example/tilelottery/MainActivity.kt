@@ -24,6 +24,39 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tile13: Button
     private lateinit var tile14: Button
     private lateinit var tile15: Button
+
+    private lateinit var wBlock1: Button
+    private lateinit var wBlock2: Button
+    private lateinit var wBlock3: Button
+    private lateinit var wBlock4: Button
+    private lateinit var wBlock5: Button
+    private lateinit var wBlock6: Button
+    private lateinit var wBlock7: Button
+    private lateinit var wBlock8: Button
+    private lateinit var wBlock9: Button
+    private lateinit var wBlock10: Button
+    private lateinit var wBlock11: Button
+    private lateinit var wBlock12: Button
+    private lateinit var wBlock13: Button
+    private lateinit var wBlock14: Button
+    private lateinit var wBlock15: Button
+
+    private lateinit var lBlock1: Button
+    private lateinit var lBlock2: Button
+    private lateinit var lBlock3: Button
+    private lateinit var lBlock4: Button
+    private lateinit var lBlock5: Button
+    private lateinit var lBlock6: Button
+    private lateinit var lBlock7: Button
+    private lateinit var lBlock8: Button
+    private lateinit var lBlock9: Button
+    private lateinit var lBlock10: Button
+    private lateinit var lBlock11: Button
+    private lateinit var lBlock12: Button
+    private lateinit var lBlock13: Button
+    private lateinit var lBlock14: Button
+    private lateinit var lBlock15: Button
+
     private lateinit var endRound: Button
     private lateinit var balance: TextView
 //    internal lateinit var color: color
@@ -51,21 +84,54 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tile1 = findViewById(R.id.tile1)
-        tile2 = findViewById(R.id.tile2)
-        tile3 = findViewById(R.id.tile3)
-        tile4 = findViewById(R.id.tile4)
-        tile5 = findViewById(R.id.tile5)
-        tile6 = findViewById(R.id.tile6)
-        tile7 = findViewById(R.id.tile7)
-        tile8 = findViewById(R.id.tile8)
-        tile9 = findViewById(R.id.tile9)
-        tile10 = findViewById(R.id.tile10)
-        tile11 = findViewById(R.id.tile11)
-        tile12 = findViewById(R.id.tile12)
-        tile13 = findViewById(R.id.tile13)
-        tile14 = findViewById(R.id.tile14)
-        tile15 = findViewById(R.id.tile15)
+        tile1 = findViewById(R.id.unopenedTile2)
+        tile2 = findViewById(R.id.unopenedTile3)
+        tile3 = findViewById(R.id.unopenedTile1)
+        tile4 = findViewById(R.id.unopenedTile5)
+        tile5 = findViewById(R.id.unopenedTile6)
+        tile6 = findViewById(R.id.unopenedTile4)
+        tile7 = findViewById(R.id.unopenedTile7)
+        tile8 = findViewById(R.id.unopenedTile9)
+        tile9 = findViewById(R.id.unopenedTile8)
+        tile10 = findViewById(R.id.unopenedTile13)
+        tile11 = findViewById(R.id.unopenedTile15)
+        tile12 = findViewById(R.id.unopenedTile14)
+        tile13 = findViewById(R.id.unopenedTile10)
+        tile14 = findViewById(R.id.unopenedTile11)
+        tile15 = findViewById(R.id.unopenedTile12)
+
+        wBlock1= findViewById(R.id.wBlock1)
+        wBlock2= findViewById(R.id.wBlock2)
+        wBlock3= findViewById(R.id.wBlock3)
+        wBlock4= findViewById(R.id.wBlock4)
+        wBlock5= findViewById(R.id.wBlock5)
+        wBlock6= findViewById(R.id.wBlock6)
+        wBlock7= findViewById(R.id.wBlock7)
+        wBlock8= findViewById(R.id.wBlock8)
+        wBlock9= findViewById(R.id.wBlock9)
+        wBlock10= findViewById(R.id.wBlock10)
+        wBlock11= findViewById(R.id.wBlock11)
+        wBlock12= findViewById(R.id.wBlock12)
+        wBlock13= findViewById(R.id.wBlock13)
+        wBlock14= findViewById(R.id.wBlock14)
+        wBlock15= findViewById(R.id.wBlock15)
+
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+        lBLock = findViewById(R.id.lBlock)
+
         endRound = findViewById(R.id.endButton)
         balance = findViewById(R.id.balanceCounter)
 
@@ -123,7 +189,7 @@ class MainActivity : AppCompatActivity() {
         if (lot1) win()
         else if (!lot1) loss()
         tile1.isClickable = false
-//        tile1.foreg
+//        colorVal.to
 
     }
     private fun checkLot2() {
@@ -224,22 +290,22 @@ class MainActivity : AppCompatActivity() {
 
     private fun win500() {
         coins += 500
-        Toast.makeText(this, "JACKPOT! You won 500 coins", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "JACKPOT! You won 500 coins!", Toast.LENGTH_SHORT).show()
     }
 
     private fun win100() {
         coins += 100
-        Toast.makeText(this, "you won 100 coins", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "You won 100 coins!", Toast.LENGTH_SHORT).show()
     }
 
     private fun win25() {
         coins += 25
-        Toast.makeText(this, "you won 25 coins", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "You won 25 coins.", Toast.LENGTH_SHORT).show()
     }
 
     private fun win5() {
         coins += 5
-        Toast.makeText(this, "you won 5 coins", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "You won 5 coins.", Toast.LENGTH_SHORT).show()
     }
 
     private fun win() {
@@ -249,25 +315,25 @@ class MainActivity : AppCompatActivity() {
 
     private fun lossMagnitude() {
         when((1..20).random()){
-            in 1..9 -> lose5() //  45%
+            in 1..9 -> lose5() //    45%
             in 10..18 -> lose25() // 40%
-            19,20 -> lose100() //   10%
+            19,20 -> lose100() //    10%
         }
     }
 
     private fun lose100() {
         coins -= 100
-        Toast.makeText(this, "you lost 100 coins!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "You lost 100 coins!", Toast.LENGTH_SHORT).show()
     }
 
     private fun lose25() {
         coins -= 25
-        Toast.makeText(this, "you lost 25 coins", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "You lost 25 coins.", Toast.LENGTH_SHORT).show()
     }
 
     private fun lose5() {
         coins -= 5
-        Toast.makeText(this, "you lost 5 coins", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "You lost 5 coins.", Toast.LENGTH_SHORT).show();
     }
 
     private fun shuffleTiles() {
