@@ -84,101 +84,221 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tile1 = findViewById(R.id.unopenedTile2)
-        tile2 = findViewById(R.id.unopenedTile3)
-        tile3 = findViewById(R.id.unopenedTile1)
-        tile4 = findViewById(R.id.unopenedTile5)
-        tile5 = findViewById(R.id.unopenedTile6)
-        tile6 = findViewById(R.id.unopenedTile4)
+        tile1 = findViewById(R.id.unopenedTile1)
+        tile2 = findViewById(R.id.unopenedTile2)
+        tile3 = findViewById(R.id.unopenedTile3)
+        tile4 = findViewById(R.id.unopenedTile4)
+        tile5 = findViewById(R.id.unopenedTile5)
+        tile6 = findViewById(R.id.unopenedTile6)
         tile7 = findViewById(R.id.unopenedTile7)
-        tile8 = findViewById(R.id.unopenedTile9)
-        tile9 = findViewById(R.id.unopenedTile8)
-        tile10 = findViewById(R.id.unopenedTile13)
-        tile11 = findViewById(R.id.unopenedTile15)
-        tile12 = findViewById(R.id.unopenedTile14)
-        tile13 = findViewById(R.id.unopenedTile10)
-        tile14 = findViewById(R.id.unopenedTile11)
-        tile15 = findViewById(R.id.unopenedTile12)
+        tile8 = findViewById(R.id.unopenedTile8)
+        tile9 = findViewById(R.id.unopenedTile9)
+        tile10 = findViewById(R.id.unopenedTile10)
+        tile11 = findViewById(R.id.unopenedTile11)
+        tile12 = findViewById(R.id.unopenedTile12)
+        tile13 = findViewById(R.id.unopenedTile13)
+        tile14 = findViewById(R.id.unopenedTile14)
+        tile15 = findViewById(R.id.unopenedTile15)
 
-        wBlock1= findViewById(R.id.wBlock1)
-        wBlock2= findViewById(R.id.wBlock2)
-        wBlock3= findViewById(R.id.wBlock3)
-        wBlock4= findViewById(R.id.wBlock4)
-        wBlock5= findViewById(R.id.wBlock5)
-        wBlock6= findViewById(R.id.wBlock6)
-        wBlock7= findViewById(R.id.wBlock7)
-        wBlock8= findViewById(R.id.wBlock8)
-        wBlock9= findViewById(R.id.wBlock9)
-        wBlock10= findViewById(R.id.wBlock10)
-        wBlock11= findViewById(R.id.wBlock11)
-        wBlock12= findViewById(R.id.wBlock12)
-        wBlock13= findViewById(R.id.wBlock13)
-        wBlock14= findViewById(R.id.wBlock14)
-        wBlock15= findViewById(R.id.wBlock15)
+        wBlock1 = findViewById(R.id.winTile1)
+        wBlock2 = findViewById(R.id.winTile2)
+        wBlock3 = findViewById(R.id.winTile3)
+        wBlock4 = findViewById(R.id.winTile4)
+        wBlock5 = findViewById(R.id.winTile5)
+        wBlock6 = findViewById(R.id.winTile6)
+        wBlock7 = findViewById(R.id.winTile7)
+        wBlock8 = findViewById(R.id.winTile8)
+        wBlock9 = findViewById(R.id.winTile9)
+        wBlock10 = findViewById(R.id.winTile10)
+        wBlock11 = findViewById(R.id.winTile11)
+        wBlock12 = findViewById(R.id.winTile12)
+        wBlock13 = findViewById(R.id.winTile13)
+        wBlock14 = findViewById(R.id.winTile14)
+        wBlock15 = findViewById(R.id.winTile15)
 
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
-        lBLock = findViewById(R.id.lBlock)
+        lBlock1 = findViewById(R.id.lossTile1)
+        lBlock2 = findViewById(R.id.lossTile2)
+        lBlock3 = findViewById(R.id.lossTile3)
+        lBlock4 = findViewById(R.id.lossTile4)
+        lBlock5 = findViewById(R.id.lossTile5)
+        lBlock6 = findViewById(R.id.lossTile6)
+        lBlock7 = findViewById(R.id.lossTile7)
+        lBlock8 = findViewById(R.id.lossTile8)
+        lBlock9 = findViewById(R.id.lossTile9)
+        lBlock10 = findViewById(R.id.lossTile10)
+        lBlock11 = findViewById(R.id.lossTile11)
+        lBlock12 = findViewById(R.id.lossTile12)
+        lBlock13 = findViewById(R.id.lossTile13)
+        lBlock14 = findViewById(R.id.lossTile14)
+        lBlock15 = findViewById(R.id.lossTile15)
 
         endRound = findViewById(R.id.endButton)
         balance = findViewById(R.id.balanceCounter)
 
         tile1.setOnClickListener { view ->
-            checkLot1()
+            tile1.alpha = 0F
+            if (lot1) {
+                win()
+                wBlock1.alpha = 1F
+            } else {
+                loss()
+                lBlock1.alpha = 1F
+            }
+            tile1.isClickable = false
         }
         tile2.setOnClickListener { view ->
-            checkLot2()
+            tile2.alpha = 0F
+            if (lot2) {
+                win()
+                wBlock2.alpha = 1F
+            } else {
+                loss()
+                lBlock2.alpha = 1F
+            }
+            tile2.isClickable = false
         }
         tile3.setOnClickListener { view ->
-            checkLot3()
+            tile3.alpha = 0F
+            if (lot3) {
+                win()
+                wBlock3.alpha = 1F
+            } else {
+                loss()
+                lBlock3.alpha = 1F
+            }
+            tile3.isClickable = false
         }
         tile4.setOnClickListener { view ->
-            checkLot4()
+            tile4.alpha = 0F
+            if (lot4) {
+                win()
+                wBlock4.alpha = 1F
+            } else {
+                loss()
+                lBlock4.alpha = 1F
+            }
+            tile4.isClickable = false
         }
         tile5.setOnClickListener { view ->
-            checkLot5()
+            tile5.alpha = 0F
+            if (lot5) {
+                win()
+                wBlock5.alpha = 1F
+            } else {
+                loss()
+                lBlock5.alpha = 1F
+            }
+            tile5.isClickable = false
         }
         tile6.setOnClickListener { view ->
-            checkLot6()
+            tile6.alpha = 0F
+            if (lot6) {
+                win()
+                wBlock6.alpha = 1F
+            } else {
+                loss()
+                lBlock6.alpha = 1F
+            }
+            tile6.isClickable = false
         }
         tile7.setOnClickListener { view ->
-            checkLot7()
+            tile7.alpha = 0F
+            if (lot7) {
+                win()
+                wBlock7.alpha = 1F
+            } else {
+                loss()
+                lBlock7.alpha = 1F
+            }
+            tile7.isClickable = false
         }
         tile8.setOnClickListener { view ->
-            checkLot8()
+            tile8.alpha = 0F
+            if (lot8) {
+                win()
+                wBlock8.alpha = 1F
+            } else {
+                loss()
+                lBlock8.alpha = 1F
+            }
+            tile8.isClickable = false
         }
         tile9.setOnClickListener { view ->
-            checkLot9()
+            tile9.alpha = 0F
+            if (lot9) {
+                win()
+                wBlock9.alpha = 1F
+            } else {
+                loss()
+                lBlock9.alpha = 1F
+            }
+            tile9.isClickable = false
         }
         tile10.setOnClickListener { view ->
-            checkLot10()
+            tile10.alpha = 0F
+            if (lot10) {
+                win()
+                wBlock10.alpha = 1F
+            } else {
+                loss()
+                lBlock10.alpha = 1F
+            }
+            tile10.isClickable = false
         }
         tile11.setOnClickListener { view ->
-            checkLot11()
+            tile11.alpha = 0F
+            if (lot11) {
+                win()
+                wBlock11.alpha = 1F
+            } else {
+                loss()
+                lBlock11.alpha = 1F
+            }
+            tile11.isClickable = false
         }
         tile12.setOnClickListener { view ->
-            checkLot12()
+            tile12.alpha = 0F
+            if (lot12) {
+                win()
+                wBlock12.alpha = 1F
+            } else {
+                loss()
+                lBlock12.alpha = 1F
+            }
+            tile12.isClickable = false
         }
         tile13.setOnClickListener { view ->
-            checkLot13()
+            tile13.alpha = 0F
+            if (lot13) {
+                win()
+                wBlock13.alpha = 1F
+            } else {
+                loss()
+                lBlock13.alpha = 1F
+            }
+            tile13.isClickable = false
         }
         tile14.setOnClickListener { view ->
-            checkLot14()
+            tile14.alpha = 0F
+            if (lot14) {
+                win()
+                wBlock14.alpha = 1F
+            } else {
+                loss()
+                lBlock14.alpha = 1F
+            }
+            tile14.isClickable = false
         }
         tile15.setOnClickListener { view ->
-            checkLot15()
+            tile15.alpha = 0F
+            if (lot15) {
+                win()
+                wBlock15.alpha = 1F
+            } else {
+                loss()
+                lBlock15.alpha = 1F
+            }
+            tile15.isClickable = false
         }
         endRound.setOnClickListener { view ->
             shuffleTiles()
@@ -367,6 +487,52 @@ class MainActivity : AppCompatActivity() {
         tile13.isClickable = true
         tile14.isClickable = true
         tile15.isClickable = true
+        tile1.alpha = 1F
+        tile2.alpha = 1F
+        tile3.alpha = 1F
+        tile4.alpha = 1F
+        tile5.alpha = 1F
+        tile6.alpha = 1F
+        tile7.alpha = 1F
+        tile8.alpha = 1F
+        tile9.alpha = 1F
+        tile10.alpha = 1F
+        tile11.alpha = 1F
+        tile12.alpha = 1F
+        tile13.alpha = 1F
+        tile14.alpha = 1F
+        tile15.alpha = 1F
+        wBlock1.alpha = 0F
+        wBlock2.alpha = 0F
+        wBlock3.alpha = 0F
+        wBlock4.alpha = 0F
+        wBlock5.alpha = 0F
+        wBlock6.alpha = 0F
+        wBlock7.alpha = 0F
+        wBlock8.alpha = 0F
+        wBlock9.alpha = 0F
+        wBlock10.alpha = 0F
+        wBlock11.alpha = 0F
+        wBlock12.alpha = 0F
+        wBlock13.alpha = 0F
+        wBlock14.alpha = 0F
+        wBlock15.alpha = 0F
+        lBlock1.alpha = 0F
+        lBlock2.alpha = 0F
+        lBlock3.alpha = 0F
+        lBlock4.alpha = 0F
+        lBlock5.alpha = 0F
+        lBlock6.alpha = 0F
+        lBlock7.alpha = 0F
+        lBlock8.alpha = 0F
+        lBlock9.alpha = 0F
+        lBlock10.alpha = 0F
+        lBlock11.alpha = 0F
+        lBlock12.alpha = 0F
+        lBlock13.alpha = 0F
+        lBlock14.alpha = 0F
+        lBlock15.alpha = 0F
+
         Toast.makeText(this, "Tiles reshuffled.", Toast.LENGTH_SHORT).show()
 //        lot1Color =
         //randomize the tiles' value as to weather ots a win, loss, or neither, and reset all tile colors back to navy blue
