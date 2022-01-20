@@ -1,5 +1,6 @@
 package com.example.tilelottery
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -84,6 +85,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
+        val coins = sharedPref.getInt("MY_COINS"), defaultValue)
 
         tile1 = findViewById(R.id.unopenedTile1)
         tile2 = findViewById(R.id.unopenedTile2)
@@ -307,94 +311,22 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun checkLot1() {
-        if (lot1) win()
-        else if (!lot1) loss()
-        tile1.isClickable = false
-//        colorVal.to
-
-    }
-    private fun checkLot2() {
-        if (lot2) win()
-        else if (!lot2) loss()
-        tile2.isClickable = false
-    }
-    private fun checkLot3() {
-        if (lot3) win()
-        else if (!lot3) loss()
-        tile3.isClickable = false
-    }
-    private fun checkLot4() {
-        if (lot4) win()
-        else if (!lot4) loss()
-        tile4.isClickable = false
-    }
-    private fun checkLot5() {
-        if (lot5) win()
-        else if (!lot5) loss()
-        tile5.isClickable = false
-    }
-    private fun checkLot6() {
-        if (lot6) win()
-        else if (!lot6) loss()
-        tile6.isClickable = false
-    }
-    private fun checkLot7() {
-        if (lot7) win()
-        else if (!lot7) loss()
-        tile7.isClickable = false
-    }
-    private fun checkLot8() {
-        if (lot8) win()
-        else if (!lot8) loss()
-        tile8.isClickable = false
-    }
-    private fun checkLot9() {
-        if (lot9) win()
-        else if (!lot9) loss()
-        tile9.isClickable = false
-    }
-    private fun checkLot10() {
-        if (lot10) win()
-        else if (!lot10) loss()
-        tile10.isClickable = false
-    }
-    private fun checkLot11() {
-        if (lot11) win()
-        else if (!lot11) loss()
-        tile11.isClickable = false
-    }
-    private fun checkLot12() {
-        if (lot12) win()
-        else if (!lot12) loss()
-        tile12.isClickable = false
-      }
-    private fun checkLot13() {
-        if (lot13) win()
-        else if (!lot13) loss()
-        tile13.isClickable = false
-    }
-    private fun checkLot14() {
-        if (lot14) win()
-        else if (!lot14) loss()
-        tile14.isClickable = false
-    }
-    private fun checkLot15() {
-        if (lot15) win()
-        else if (!lot15) loss()
-        tile15.isClickable = false
-    }
-
-    private fun updateScore() { //the
+    private fun updateScore() {
         balance.text = getString(R.string.score, coins.toString())
+        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
+        with (sharedPref.edit()) {
+            putInt("MY_COINS", coins)
+            apply()
+        }
+
 //        val blinkAnimation = AnimationUtils.loadAnimation(this, R.anim.blink)
 //        balance.startAnimation(blinkAnimation)
     }
 
-    private fun nothing() {
-        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
-        updateScore()// and make tile black
-    } // chance of rickroll
+//    private fun nothing() {
+//        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
+//        updateScore()// and make tile black
+//    } // chance of rickroll
 
     private fun loss() {
         lossMagnitude()
