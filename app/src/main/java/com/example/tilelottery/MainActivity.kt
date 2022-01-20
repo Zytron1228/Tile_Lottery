@@ -6,7 +6,6 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import kotlin.random.Random
-import android.R
 
 import android.content.SharedPreferences
 import android.view.View
@@ -84,9 +83,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main) // suddenly not working? why?
+        setContentView(R.layout.activity_main)
 
-        tile1 = findViewById(R.id.unopenedTile1) //(Sorry its so repetitive)
+        tile1 = findViewById(R.id.unopenedTile1)
         tile2 = findViewById(R.id.unopenedTile2)
         tile3 = findViewById(R.id.unopenedTile3)
         tile4 = findViewById(R.id.unopenedTile4)
