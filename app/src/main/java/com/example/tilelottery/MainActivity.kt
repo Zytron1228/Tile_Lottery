@@ -64,8 +64,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var endRound: Button
     private lateinit var balance: TextView
-//    internal lateinit var color: color
-    public var currentColor ="@color/lotDefault"
 
     private var coins = 0
     private var lot1 = Random.nextBoolean()
@@ -83,15 +81,12 @@ class MainActivity : AppCompatActivity() {
     private var lot13 = Random.nextBoolean()
     private var lot14 = Random.nextBoolean()
     private var lot15 = Random.nextBoolean()
-//    private var lot1Color = @color/lotNeither
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val save = getSharedPreferences(coins.toString(), 0)
-        valLoad
+        setContentView(R.layout.activity_main) // suddenly not working? why?
 
-        tile1 = findViewById(R.id.unopenedTile1)
+        tile1 = findViewById(R.id.unopenedTile1) //(Sorry its so repetitive)
         tile2 = findViewById(R.id.unopenedTile2)
         tile3 = findViewById(R.id.unopenedTile3)
         tile4 = findViewById(R.id.unopenedTile4)
@@ -540,10 +535,7 @@ class MainActivity : AppCompatActivity() {
         lBlock13.alpha = 0F
         lBlock14.alpha = 0F
         lBlock15.alpha = 0F
-
         Toast.makeText(this, "Tiles reshuffled.", Toast.LENGTH_SHORT).show()
-//        lot1Color =
-        //randomize the tiles' value as to weather ots a win, loss, or neither, and reset all tile colors back to navy blue
     }
 
 }
