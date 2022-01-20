@@ -86,9 +86,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
-        val coins = sharedPref.getInt("MY_COINS"), defaultValue)
-
         tile1 = findViewById(R.id.unopenedTile1)
         tile2 = findViewById(R.id.unopenedTile2)
         tile3 = findViewById(R.id.unopenedTile3)
@@ -313,11 +310,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateScore() {
         balance.text = getString(R.string.score, coins.toString())
-        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
-        with (sharedPref.edit()) {
-            putInt("MY_COINS", coins)
-            apply()
-        }
+
 
 //        val blinkAnimation = AnimationUtils.loadAnimation(this, R.anim.blink)
 //        balance.startAnimation(blinkAnimation)
@@ -369,8 +362,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun lossMagnitude() {
         when((1..20).random()){
-            in 1..9 -> lose5() //    45%
-            in 10..18 -> lose25() // 40%
+            in 1..8 -> lose5() //    40%
+            in 9..18 -> lose25() //  45%
             19,20 -> lose100() //    10%
         }
     }
