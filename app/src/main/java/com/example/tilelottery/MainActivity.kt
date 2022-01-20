@@ -6,6 +6,11 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import kotlin.random.Random
+import android.R
+
+import android.content.SharedPreferences
+import android.view.View
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -83,6 +88,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val save = getSharedPreferences(coins.toString(), 0)
+        valLoad
 
         tile1 = findViewById(R.id.unopenedTile1)
         tile2 = findViewById(R.id.unopenedTile2)
@@ -134,6 +141,7 @@ class MainActivity : AppCompatActivity() {
 
         endRound = findViewById(R.id.endButton)
         balance = findViewById(R.id.balanceCounter)
+        updateScore()
 
         tile1.setOnClickListener { view ->
             tile1.alpha = 0F
@@ -396,7 +404,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun loss() {
         lossMagnitude()
-        updateScore()// and make tile red
+        updateScore()
     }
 
     private fun winMagnitude() {
@@ -430,7 +438,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun win() {
         winMagnitude()
-        updateScore()// and make tile green
+        updateScore()
     }
 
     private fun lossMagnitude() {
