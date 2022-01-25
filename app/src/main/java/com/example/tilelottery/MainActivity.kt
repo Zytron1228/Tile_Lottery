@@ -1,6 +1,5 @@
 package com.example.tilelottery
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -8,12 +7,10 @@ import android.widget.TextView
 import android.widget.Toast
 import kotlin.random.Random
 
-import android.content.SharedPreferences
-import android.view.View
-
 
 class MainActivity : AppCompatActivity() {
 
+    //tiles
     private lateinit var tile1: Button
     private lateinit var tile2: Button
     private lateinit var tile3: Button
@@ -29,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tile13: Button
     private lateinit var tile14: Button
     private lateinit var tile15: Button
-
+    //win blocks
     private lateinit var wBlock1: Button
     private lateinit var wBlock2: Button
     private lateinit var wBlock3: Button
@@ -45,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var wBlock13: Button
     private lateinit var wBlock14: Button
     private lateinit var wBlock15: Button
-
+    //loss blocks
     private lateinit var lBlock1: Button
     private lateinit var lBlock2: Button
     private lateinit var lBlock3: Button
@@ -61,11 +58,23 @@ class MainActivity : AppCompatActivity() {
     private lateinit var lBlock13: Button
     private lateinit var lBlock14: Button
     private lateinit var lBlock15: Button
-
-    private lateinit var endRound: Button
-    private lateinit var balance: TextView
-
-    private var coins = 0
+    //reward text
+    private lateinit var reward1: TextView
+    private lateinit var reward2: TextView
+    private lateinit var reward3: TextView
+    private lateinit var reward4: TextView
+    private lateinit var reward5: TextView
+    private lateinit var reward6: TextView
+    private lateinit var reward7: TextView
+    private lateinit var reward8: TextView
+    private lateinit var reward9: TextView
+    private lateinit var reward10: TextView
+    private lateinit var reward11: TextView
+    private lateinit var reward12: TextView
+    private lateinit var reward13: TextView
+    private lateinit var reward14: TextView
+    private lateinit var reward15: TextView
+    //tile win/loss values
     private var lot1 = Random.nextBoolean()
     private var lot2 = Random.nextBoolean()
     private var lot3 = Random.nextBoolean()
@@ -81,6 +90,10 @@ class MainActivity : AppCompatActivity() {
     private var lot13 = Random.nextBoolean()
     private var lot14 = Random.nextBoolean()
     private var lot15 = Random.nextBoolean()
+    //others
+    private lateinit var endRound: Button
+    private lateinit var balance: TextView
+    private var coins = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -134,10 +147,25 @@ class MainActivity : AppCompatActivity() {
         lBlock14 = findViewById(R.id.lossTile14)
         lBlock15 = findViewById(R.id.lossTile15)
 
+        reward1 = findViewById(R.id.tilereward1)
+        reward2 = findViewById(R.id.tilereward2)
+        reward3 = findViewById(R.id.tilereward3)
+        reward4 = findViewById(R.id.tilereward4)
+        reward5 = findViewById(R.id.tilereward5)
+        reward6 = findViewById(R.id.tilereward6)
+        reward7 = findViewById(R.id.tilereward7)
+        reward8 = findViewById(R.id.tilereward8)
+        reward9 = findViewById(R.id.tilereward9)
+        reward10 = findViewById(R.id.tilereward10)
+        reward11 = findViewById(R.id.tilereward11)
+        reward12 = findViewById(R.id.tilereward12)
+        reward13 = findViewById(R.id.tilereward13)
+        reward14 = findViewById(R.id.tilereward14)
+        reward15 = findViewById(R.id.tilereward15)
+
         endRound = findViewById(R.id.endButton)
         balance = findViewById(R.id.balanceCounter)
         updateScore()
-
         tile1.setOnClickListener { view ->
             tile1.alpha = 0F
             if (lot1) {
@@ -311,6 +339,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateScore() {
         balance.text = getString(R.string.score, coins.toString())
 
+        reward1.text = getString(R.id.tilereward1)
 
 //        val blinkAnimation = AnimationUtils.loadAnimation(this, R.anim.blink)
 //        balance.startAnimation(blinkAnimation)
@@ -327,11 +356,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun winMagnitude() {
-        when((1..15).random()){
-            in 1..8 -> win5() //    53.33 %
-            9,12 -> win25()  //     26.66 %
-            13,14 -> win100() //    13.33 %
-            15 -> win500()    //    06.66 %
+        when((1..1000).random()){
+            in 1..533 -> win5() //    53.3 %
+            in 534..778 -> win25()  //     26.66 %
+            in 13..14 -> win100() //    13.33 %
+            in 15..188 -> win500()    //    06.66 %
         }
     }
 
