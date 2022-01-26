@@ -348,7 +348,7 @@ class MainActivity : AppCompatActivity() {
 //    private fun nothing() {
 //        Toast.makeText(this, "you earned nothing", Toast.LENGTH_SHORT).show()
 //        updateScore()// and make tile black
-//    } // chance of rickroll
+//    } // chance of rickroll                              E
 
     private fun loss() {
         lossMagnitude()
