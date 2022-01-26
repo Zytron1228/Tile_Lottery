@@ -357,10 +357,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun winMagnitude() {
         when((1..1000).random()){
-            in 1..533 -> win5() //    53.3 %
-            in 534..778 -> win25()  //     26.66 %
-            in 13..14 -> win100() //    13.33 %
-            in 15..188 -> win500()    //    06.66 %
+            in 1..545 -> win5() //     54.5 %
+            in 546..850 -> win25()  // 30.5 %
+            in 851..975 -> win100() // 12.5 %
+            in 976..1000 -> win500()// 02.5 %
         }
     }
 
