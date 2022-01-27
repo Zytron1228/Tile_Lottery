@@ -2,5 +2,6 @@
     <string name="app_name">Tile Lottery</string>
     <string name="score">Coins: %s</string>
     <string name="Instructions">Click a tile! \nYou might gain coins, or you might loose coins.</string>
+    <string name="reward">%s coins</string>
 
 </resources>

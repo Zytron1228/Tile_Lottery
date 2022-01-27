@@ -1,5 +1,7 @@
 package com.example.tilelottery
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -94,6 +96,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var endRound: Button
     private lateinit var balance: TextView
     private var coins = 0
+    private var rewardString: String = "won 0"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -339,7 +342,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateScore() {
         balance.text = getString(R.string.score, coins.toString())
 
-        reward1.text = getString(R.id.tilereward1)
+        reward1.text = getString(R.string.reward, rewardString)
 
 //        val blinkAnimation = AnimationUtils.loadAnimation(this, R.anim.blink)
 //        balance.startAnimation(blinkAnimation)
@@ -359,29 +362,49 @@ class MainActivity : AppCompatActivity() {
         when((1..1000).random()){
             in 1..545 -> win5() //     54.5 %
             in 546..850 -> win25()  // 30.5 %
-            in 851..975 -> win100() // 12.5 %
-            in 976..1000 -> win500()// 02.5 %
+            in 851..990 -> win100() // 14 %
+            in 991..1000 -> win500()// 01 %
         }
     }
 
     private fun win500() {
-        coins += 500
-        Toast.makeText(this, "JACKPOT! You won 500 coins!", Toast.LENGTH_SHORT).show()
+        when((1..10000).random()){
+            1, in 3..9999 -> {
+                coins += 500
+                rewardString = "+500"
+            }
+            2 -> {
+                coins += 1000000 // 1 million coins
+                rewardString = "Rickrolled\n+10Mil"
+                rickroll() //This rickroll is a 1 in 10,000 chance, meaning 0.01% chance. In total, this is a 5 in 10mil chance, or 0.00005% chance.
+            }
+        }
+
+    }
+
+    private fun rickroll() {
+        Toast.makeText(this, "You won [Rickroll'D]! ;) The chances of this are 5 in 10 million, or 0.00005% per click. Check your coin balance ;)", Toast.LENGTH_LONG).show()
+        val url = Uri.parse("https://www.youtube.com/watch?v=pyoURHR-g4U")
+        val intent = Intent(Intent.ACTION_VIEW, url)
+        startActivity(intent)
     }
 
     private fun win100() {
         coins += 100
         Toast.makeText(this, "You won 100 coins!", Toast.LENGTH_SHORT).show()
+        rewardString = "won 100"
     }
 
     private fun win25() {
         coins += 25
         Toast.makeText(this, "You won 25 coins.", Toast.LENGTH_SHORT).show()
+        rewardString = "won 25"
     }
 
     private fun win5() {
         coins += 5
-        Toast.makeText(this, "You won 5 coins.", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(this, "You won 5 coins.", Toast.LENGTH_SHORT).show()
+        rewardString = "won 5"
     }
 
     private fun win() {
@@ -390,10 +413,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun lossMagnitude() {
-        when((1..20).random()){
-            in 1..8 -> lose5() //    40%
-            in 9..18 -> lose25() //  45%
-            19,20 -> lose100() //    10%
+        when((1..1000).random()){
+            in 1..400 -> lose5() //    40%
+            in 401..825 -> lose25() //  42.5%
+            in 826..1000 -> lose100() //    17.5%
         }
     }
 

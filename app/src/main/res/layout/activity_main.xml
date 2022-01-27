@@ -134,7 +134,7 @@
         android:id="@+id/winTile9"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:alpha="1"
+        android:alpha="0"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotWin"
@@ -143,13 +143,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/winTile10"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:alpha="1"
+        android:alpha="0"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotWin"
@@ -165,7 +166,7 @@
         android:id="@+id/winTile11"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:alpha="1"
+        android:alpha="0"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotWin"
@@ -180,7 +181,7 @@
         android:id="@+id/winTile12"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:alpha="1"
+        android:alpha="0"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotWin"
@@ -196,7 +197,7 @@
         android:id="@+id/winTile13"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:alpha="1"
+        android:alpha="0"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotWin"
@@ -212,7 +213,7 @@
         android:id="@+id/winTile14"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:alpha="1"
+        android:alpha="0"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotWin"
@@ -227,7 +228,7 @@
         android:id="@+id/winTile15"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:alpha="1"
+        android:alpha="0"
         android:background="#00000000"
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotWin"
@@ -480,190 +481,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/tilereward1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile1"
-        app:layout_constraintEnd_toEndOf="@+id/winTile1"
-        app:layout_constraintStart_toStartOf="@+id/winTile1"
-        app:layout_constraintTop_toTopOf="@+id/winTile1" />
-
-    <TextView
-        android:id="@+id/tilereward2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile2"
-        app:layout_constraintEnd_toEndOf="@+id/winTile2"
-        app:layout_constraintStart_toStartOf="@+id/winTile2"
-        app:layout_constraintTop_toTopOf="@+id/winTile2" />
-
-    <TextView
-        android:id="@+id/tilereward3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile3"
-        app:layout_constraintEnd_toEndOf="@+id/winTile3"
-        app:layout_constraintStart_toStartOf="@+id/winTile3"
-        app:layout_constraintTop_toTopOf="@+id/winTile3" />
-
-    <TextView
-        android:id="@+id/tilereward4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile4"
-        app:layout_constraintEnd_toEndOf="@+id/winTile4"
-        app:layout_constraintStart_toStartOf="@+id/winTile4"
-        app:layout_constraintTop_toTopOf="@+id/winTile4" />
-
-    <TextView
-        android:id="@+id/tilereward5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile5"
-        app:layout_constraintEnd_toEndOf="@+id/winTile5"
-        app:layout_constraintStart_toStartOf="@+id/winTile5"
-        app:layout_constraintTop_toTopOf="@+id/winTile5" />
-
-    <TextView
-        android:id="@+id/tilereward6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile6"
-        app:layout_constraintEnd_toEndOf="@+id/winTile6"
-        app:layout_constraintStart_toStartOf="@+id/winTile6"
-        app:layout_constraintTop_toTopOf="@+id/winTile6" />
-
-    <TextView
-        android:id="@+id/tilereward7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile7"
-        app:layout_constraintEnd_toEndOf="@+id/winTile7"
-        app:layout_constraintStart_toStartOf="@+id/winTile7"
-        app:layout_constraintTop_toTopOf="@+id/winTile7" />
-
-    <TextView
-        android:id="@+id/tilereward8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile8"
-        app:layout_constraintEnd_toEndOf="@+id/winTile8"
-        app:layout_constraintStart_toStartOf="@+id/winTile8"
-        app:layout_constraintTop_toTopOf="@+id/winTile8" />
-
-    <TextView
-        android:id="@+id/tilereward9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile9"
-        app:layout_constraintEnd_toEndOf="@+id/winTile9"
-        app:layout_constraintStart_toStartOf="@+id/winTile9"
-        app:layout_constraintTop_toTopOf="@+id/winTile9" />
-
-    <TextView
-        android:id="@+id/tilereward10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile10"
-        app:layout_constraintEnd_toEndOf="@+id/winTile10"
-        app:layout_constraintStart_toStartOf="@+id/winTile10"
-        app:layout_constraintTop_toTopOf="@+id/winTile10" />
-
-    <TextView
-        android:id="@+id/tilereward11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile11"
-        app:layout_constraintEnd_toEndOf="@+id/winTile11"
-        app:layout_constraintStart_toStartOf="@+id/winTile11"
-        app:layout_constraintTop_toTopOf="@+id/winTile11" />
-
-    <TextView
-        android:id="@+id/tilereward12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile12"
-        app:layout_constraintEnd_toEndOf="@+id/winTile12"
-        app:layout_constraintStart_toStartOf="@+id/winTile12"
-        app:layout_constraintTop_toTopOf="@+id/winTile12" />
-
-    <TextView
-        android:id="@+id/tilereward13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile13"
-        app:layout_constraintEnd_toEndOf="@+id/winTile13"
-        app:layout_constraintStart_toStartOf="@+id/winTile13"
-        app:layout_constraintTop_toTopOf="@+id/winTile13" />
-
-    <TextView
-        android:id="@+id/tilereward14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile14"
-        app:layout_constraintEnd_toEndOf="@+id/winTile14"
-        app:layout_constraintStart_toStartOf="@+id/winTile14"
-        app:layout_constraintTop_toTopOf="@+id/winTile14" />
-
-    <TextView
-        android:id="@+id/tilereward15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:alpha="1"
-        android:text="You Won 0 Coins!"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/winTile15"
-        app:layout_constraintEnd_toEndOf="@+id/winTile15"
-        app:layout_constraintStart_toStartOf="@+id/winTile15"
-        app:layout_constraintTop_toTopOf="@+id/winTile15" />
-
-    <androidx.constraintlayout.widget.Group
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
     <Button
         android:id="@+id/unopenedTile1"
         android:layout_width="105dp"
@@ -753,6 +570,7 @@
         android:foreground="@android:drawable/progress_horizontal"
         android:foregroundTint="@color/lotDefault"
         android:foregroundTintMode="multiply"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.874"
@@ -934,6 +752,236 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.868" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tilereward1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile1"
+        app:layout_constraintEnd_toEndOf="@+id/winTile1"
+        app:layout_constraintStart_toStartOf="@+id/winTile1"
+        app:layout_constraintTop_toTopOf="@+id/winTile1" />
+
+    <TextView
+        android:id="@+id/tilereward2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile2"
+        app:layout_constraintEnd_toEndOf="@+id/winTile2"
+        app:layout_constraintStart_toStartOf="@+id/winTile2"
+        app:layout_constraintTop_toTopOf="@+id/winTile2" />
+
+    <TextView
+        android:id="@+id/tilereward3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile3"
+        app:layout_constraintEnd_toEndOf="@+id/winTile3"
+        app:layout_constraintStart_toStartOf="@+id/winTile3"
+        app:layout_constraintTop_toTopOf="@+id/winTile3" />
+
+    <TextView
+        android:id="@+id/tilereward4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile4"
+        app:layout_constraintEnd_toEndOf="@+id/winTile4"
+        app:layout_constraintStart_toStartOf="@+id/winTile4"
+        app:layout_constraintTop_toTopOf="@+id/winTile4" />
+
+    <TextView
+        android:id="@+id/tilereward5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile5"
+        app:layout_constraintEnd_toEndOf="@+id/winTile5"
+        app:layout_constraintStart_toStartOf="@+id/winTile5"
+        app:layout_constraintTop_toTopOf="@+id/winTile5" />
+
+    <TextView
+        android:id="@+id/tilereward6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile6"
+        app:layout_constraintEnd_toEndOf="@+id/winTile6"
+        app:layout_constraintStart_toStartOf="@+id/winTile6"
+        app:layout_constraintTop_toTopOf="@+id/winTile6" />
+
+    <TextView
+        android:id="@+id/tilereward7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile7"
+        app:layout_constraintEnd_toEndOf="@+id/winTile7"
+        app:layout_constraintStart_toStartOf="@+id/winTile7"
+        app:layout_constraintTop_toTopOf="@+id/winTile7" />
+
+    <TextView
+        android:id="@+id/tilereward8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile8"
+        app:layout_constraintEnd_toEndOf="@+id/winTile8"
+        app:layout_constraintStart_toStartOf="@+id/winTile8"
+        app:layout_constraintTop_toTopOf="@+id/winTile8" />
+
+    <TextView
+        android:id="@+id/tilereward9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile9"
+        app:layout_constraintEnd_toEndOf="@+id/winTile9"
+        app:layout_constraintStart_toStartOf="@+id/winTile9"
+        app:layout_constraintTop_toTopOf="@+id/winTile9" />
+
+    <TextView
+        android:id="@+id/tilereward10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile10"
+        app:layout_constraintEnd_toEndOf="@+id/winTile10"
+        app:layout_constraintStart_toStartOf="@+id/winTile10"
+        app:layout_constraintTop_toTopOf="@+id/winTile10" />
+
+    <TextView
+        android:id="@+id/tilereward11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile11"
+        app:layout_constraintEnd_toEndOf="@+id/winTile11"
+        app:layout_constraintStart_toStartOf="@+id/winTile11"
+        app:layout_constraintTop_toTopOf="@+id/winTile11" />
+
+    <TextView
+        android:id="@+id/tilereward12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile12"
+        app:layout_constraintEnd_toEndOf="@+id/winTile12"
+        app:layout_constraintStart_toStartOf="@+id/winTile12"
+        app:layout_constraintTop_toTopOf="@+id/winTile12" />
+
+    <TextView
+        android:id="@+id/tilereward13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile13"
+        app:layout_constraintEnd_toEndOf="@+id/winTile13"
+        app:layout_constraintStart_toStartOf="@+id/winTile13"
+        app:layout_constraintTop_toTopOf="@+id/winTile13" />
+
+    <TextView
+        android:id="@+id/tilereward14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile14"
+        app:layout_constraintEnd_toEndOf="@+id/winTile14"
+        app:layout_constraintStart_toStartOf="@+id/winTile14"
+        app:layout_constraintTop_toTopOf="@+id/winTile14" />
+
+    <TextView
+        android:id="@+id/tilereward15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="+0 Coins."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/winTile15"
+        app:layout_constraintEnd_toEndOf="@+id/winTile15"
+        app:layout_constraintStart_toStartOf="@+id/winTile15"
+        app:layout_constraintTop_toTopOf="@id/winTile15" />
 
     <TextView
         android:id="@+id/textView"
